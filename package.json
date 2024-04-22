@@ -1,0 +1,17 @@
+{
+  "name": "micro-service-workspaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "libraries/*"
+  ],
+  "scripts": {
+    "install": "npm install --ignore-scripts",
+    "test": "npm run test:libraries",
+    "test:libraries": "npm run test --workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
